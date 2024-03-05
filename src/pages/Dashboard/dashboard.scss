@@ -1,0 +1,36 @@
+.header_scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scollmenu_start {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.category_bar {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  overflow-x: scroll;
+  list-style: none;
+  background-color: black;
+  & .selected {
+    color: red;
+    border-bottom: inset red;
+  }
+
+  &_item {
+    min-width: 14rem;
+    color: aliceblue;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
+.category_bar::-webkit-scrollbar {
+  display: none;
+}
